@@ -1,0 +1,53 @@
+.whiteContainer{
+    height: fit-content;
+}
+
+.top{
+    padding: 5% 0;
+    display: grid;
+    grid-template-areas: 
+    'header menu'
+    'main main';
+}
+
+.bottom{
+    display: flex;
+    flex-direction: row;
+    padding: 0 10% 5% 10%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    width: 25%;
+}
+
+li{
+    text-align: left;
+}
+
+.pageViews{
+    grid-area: header;
+}
+
+.sliderContainer{
+    grid-area: main;
+}
+
+.price{
+    grid-area: menu;
+}
+
+.yearlyBundle{
+    justify-content: center;
+}
+
+.switch{
+    margin: 0px 30%;
+}
+
+.centre{
+    display: flex;
+    justify-content: center;
+}
+

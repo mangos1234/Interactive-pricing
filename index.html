@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet"> 
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" media="screen and (min-width: 500px)" href="desktop.css">
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="textContainer">
+      <h1>Simple, traffic-based pricing</h1>
+      <p>Sign-up for our 30-day trial. No credit card required.</p>
+    </div>
+    <div class="whiteContainer">
+
+      <div class="top">
+        <div class="pageViews"></div>
+        <div class="sliderContainer">
+          <input type="range" min="1" max="5" value="3" class="rangeSlider" step="1">
+        </div>
+        <div class="price">
+          <div class="actualPrice"></div>
+          <div class="timeFrame">placeholder</div>
+        </div>
+      </div>
+
+      <div class="toggleContainer">
+        <h2 class="centre">Monthly Billing</h2>
+        <label class="switch">
+          <input type="checkbox">
+          <span class="slider round"></span>
+        </label>
+        <div class="yearlyBundle">
+          <h2>Yearly Billing</h2>
+          <h3 class="discount">-25%</h3> 
+        </div>
+      </div>
+      <hr>
+      <div class="bottom">
+        <ul class="checklist">
+          <li><img src="./images/icon-check.svg"> Unlimited websites</li>
+          <li><img src="./images/icon-check.svg">100% data ownership</li>
+          <li><img src="./images/icon-check.svg">Email reports</li>
+        </ul>
+        <button>Start my trial</button>
+      </div>
+    </div>
+    <br>
+  </div>
+
+  <script src="code.js"></script>
+</body>
+</html>
